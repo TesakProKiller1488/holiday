@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование - Праздник в каждый дом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Праздник в каждый дом</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search-results.html">Поиск</a></li>
+                <li><a href="booking.html">Управление бронированием</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="booking-form">
+        <h2>Бронирование</h2>
+        <form>
+            <fieldset>
+                <legend>Данные о заказе</legend>
+                <label for="region">Регион:</label>
+                <input type="text" id="region" name="region" value="Москва" readonly>
+                <label for="address">Адрес локации:</label>
+                <input type="text" id="address" name="address" value="Центральный парк, ул. Ленина, 10" readonly>
+                <label for="date">Дата мероприятия:</label>
+                <input type="date" id="date" name="date" value="2024-06-20" readonly>
+                <label for="participants">Количество человек:</label>
+                <input type="number" id="participants" name="participants" value="20" readonly>
+                <label for="cost">Стоимость:</label>
+                <input type="text" id="cost" name="cost" value="5000 рублей" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Выбор дополнительных услуг</legend>
+                <label><input type="checkbox" name="services" value="catering"> Организация питания</label>
+                <label><input type="checkbox" name="services" value="animators"> Услуги аниматоров</label>
+                <label><input type="checkbox" name="services" value="host"> Услуги ведущего</label>
+                <label><input type="checkbox" name="services" value="taxi"> Услуги детского такси</label>
+            </fieldset>
+
+            <label for="comments">Дополнительный комментарий:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <label for="email">Email заказчика:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="final-cost">Итоговая стоимость:</label>
+            <input type="text" id="final-cost" name="final-cost" value="5000 рублей" readonly>
+
+            <button type="submit">Оформить бронирование</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Телефон: 8 (800) 111-20-20</p>
+        <nav>
+            <ul>
+                <li><a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a></li>
+                <li><a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
